@@ -44,3 +44,15 @@ function copyright_customizer( $wp_customize ) {
 }
 
 add_action( 'customize_register', 'copyright_customizer' );
+
+function m2_customize_register( $wp_customize ) {
+    $wp_customize->add_setting( 'm2_logo' ); // Add setting for logo uploader
+
+    // Add control for logo uploader (actual uploader)
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'm2_logo', array(
+        'label'    => __( 'Upload Menu Logo', 'm2' ),
+        'section'  => 'title_tagline',
+        'settings' => 'm2_logo',
+    ) ) );
+}
+add_action( 'customize_register', 'm2_customize_register' );

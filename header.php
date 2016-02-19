@@ -104,8 +104,13 @@
 				<span class="icon-bar"></span>
 			</button>
 
-			<a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand"><img src="<?php echo esc_url(home_url('/')); ?>wp-content/themes/functional-movement/img/logo.jpg"></a>
+			<?php if ( get_theme_mod( 'm2_logo' ) ) : ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="<?php echo get_theme_mod( 'm2_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+					</a>
+			<?php else : ?>
 
+			<?php endif; ?>
 		</div>
 
 		<div class="collapse navbar-collapse navbar-primary-collapse">
