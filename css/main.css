@@ -319,6 +319,10 @@ input, select, textarea {
 	float: none!important;
 }
 
+.header-top-area .bootstrap-select:not([class*=span]):not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	width: auto!important;
+}
+
 span.view-all {
 	font-size: 15px;
 	font-family: 'Karla', sans-serif;

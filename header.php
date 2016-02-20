@@ -37,14 +37,14 @@
 		<div class="container">
 			<div class="row">
 				<!-- header-top-left start -->
-				<div class="col-lg-6 col-md-6 col-sm-7">
+				<div class="col-xs-6">
 					<div class="header-top-left">
 						<?php dynamic_sidebar('topheader-left'); ?>
 					</div>
 				</div>
 				<!-- header-top-left end -->
 				<!-- header-top-right start -->
-				<div class="col-lg-6 col-md-6 col-sm-5">
+				<div class="col-xs-6">
 					<?php dynamic_sidebar('topheader-right'); ?>
 				</div>
 				<!-- header-top-right end -->
