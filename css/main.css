@@ -314,6 +314,11 @@ input, select, textarea {
 	margin-bottom: 0!important;
 }
 
+.header-top-area .bootstrap-select>.btn {
+	width: auto!important;
+	float: none!important;
+}
+
 span.view-all {
 	font-size: 15px;
 	font-family: 'Karla', sans-serif;
