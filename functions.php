@@ -88,7 +88,7 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
 		register_sidebar(array(
 			'name'          => __('Top Header Right', 'bootstrap-basic'),
 			'id'            => 'topheader-right',
-			'before_widget' => '<div id="%1$s" class="widget header-top-right %2$s">',
+			'before_widget' => '<div id="%1$s" class="widget header-top-right text-right %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '',
 			'after_title'   => '',

@@ -308,6 +308,12 @@ input, select, textarea {
 	vertical-align: baseline;
 }
 
+.header-top-area .bootstrap-select.btn-group:not(.input-group-btn),
+.header-top-area .bootstrap-select.btn-group[class*=span],
+.header-top-area .bootstrap-select.btn-group[class*=col-] {
+	margin-bottom: 0!important;
+}
+
 span.view-all {
 	font-size: 15px;
 	font-family: 'Karla', sans-serif;
