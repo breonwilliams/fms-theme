@@ -92,32 +92,31 @@
 			</div><!--.site-branding-->
 		</div>
 	</div>
-</header>
 
-<nav class="navbar navbar-custom yamm" role="affix">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-				<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
+	<nav class="navbar navbar-custom yamm" role="affix">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+					<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 
-			<?php if ( get_theme_mod( 'm2_logo' ) ) : ?>
+				<?php if ( get_theme_mod( 'm2_logo' ) ) : ?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<img src="<?php echo get_theme_mod( 'm2_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 					</a>
-			<?php else : ?>
+				<?php else : ?>
 
-			<?php endif; ?>
-		</div>
+				<?php endif; ?>
+			</div>
 
-		<div class="collapse navbar-collapse navbar-primary-collapse">
-			<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-left', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
-			<form class="navbar-form navbar-right" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-				<div class="input-group">
-					<input type="search" class="form-control pull-right" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic'); ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label', 'bootstrap-basic'); ?>">
+			<div class="collapse navbar-collapse navbar-primary-collapse">
+				<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-left', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
+				<form class="navbar-form navbar-right" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+					<div class="input-group">
+						<input type="search" class="form-control pull-right" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic'); ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label', 'bootstrap-basic'); ?>">
 						<span class="input-group-btn">
 							<button type="reset" class="btn btn-red">
 								<span class="glyphicon glyphicon-remove">
@@ -130,12 +129,12 @@
 								</span>
 							</button>
 						</span>
-				</div>
-			</form>
-		</div><!--.navbar-collapse-->
-	</div>
-</nav>
-
+					</div>
+				</form>
+			</div><!--.navbar-collapse-->
+		</div>
+	</nav>
+</header>
 
 <?php full_above_content_area(); ?>
 <?php the_breadcrumb(); ?>
