@@ -2237,6 +2237,12 @@ img.rounded, .rounded {
 		position: relative;
 		min-height: 330px;
 	}
+
+	.blog .entry.post.search {
+		padding-left: 0;
+		position: relative;
+		min-height: auto;
+	}
 }
 .blog .entry {
 	border-bottom: 2px solid #f2f2f2;
@@ -2252,6 +2258,10 @@ img.rounded, .rounded {
 @media only screen and (min-width: 767px) {
 	.blog .entry.has-post-thumbnail {
 		padding-right: 170px;
+	}
+
+	.blog .entry.has-post-thumbnail.search {
+		padding-right: 0;
 	}
 }
 @media only screen and (min-width: 1023px) {
